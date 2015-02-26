@@ -23,7 +23,7 @@
     <div class="container">
 
       <div style="padding: 40px 15px; text-align: center;">
-        <h1>${hello}</h1>
+        <h1>${message}</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> Your session id is: ${session.id}.</p>
       </div>
 
