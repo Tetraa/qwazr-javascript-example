@@ -7,13 +7,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Qwazr Template</a>
+          <a class="navbar-brand" href="http://www.qwazr.com/">Qwazr</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="${request.contextPath}">Home</a></li>
+            <li><a href="${request.contextPath}/signin">Sign In</a></li>
           </ul>
         </div>
       </div>
