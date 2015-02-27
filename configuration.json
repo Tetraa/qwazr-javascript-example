@@ -5,7 +5,7 @@
 			"class": "com.opensearchserver.provider.CassandraProvider",
 			"keyspaceLocator": {
 				"keyspace": "qwazr_public",
-				"csql": "select keyspace_name,user from repos where full_name=?"
+				"cql": "select keyspace_name,user from repos where full_name=?"
 			},
 			"hosts": [
 				"ssd001.qwazr.net",
