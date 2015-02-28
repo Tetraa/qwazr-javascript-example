@@ -1,1 +1,1 @@
-CREATE INDEX ON authors (password);
+CREATE INDEX IF NOT EXISTS ON authors (password);
