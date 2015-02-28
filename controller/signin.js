@@ -8,7 +8,11 @@ if (request.body != null) {
 	if (login != null && password != null) {
 		message = login + ' ' + password;
 		var row = providers.cassandra.execute("SELECT * FROM authors WHERE user_name=? AND password = ?", login, password).one();
-		redirect = request.getContextPath();
+		if (row != null) {
+
+			redirect = request.getContextPath();
+		} else
+			message = "Authentication failure";
 	}
 }
 
