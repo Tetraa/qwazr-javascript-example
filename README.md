@@ -9,3 +9,26 @@ A typical website structure contains the following directories:
 - [static](static): Contains the static files (css, javascript).
 
 The default controller is called index.js located in the root of the controller directory.
+
+## Configuration File
+
+The global configuration file is called configuration.json. It contains the required initialization parameters. On www.qwazr.com these parameters are required to link the website with its Cassandra keyspace.
+
+```json
+{
+	"providers": [
+		{
+			"name": "cassandra",
+			"class": "com.opensearchserver.provider.CassandraProvider",
+			"keyspaceLocator": {
+				"keyspace": "qwazr_public",
+				"cql": "select keyspace_name,user from repos where full_name=?"
+			},
+			"hosts": [
+				"ssd001.qwazr.net",
+				"ssd002.qwazr.net"
+			]
+		}
+	]
+}
+```
