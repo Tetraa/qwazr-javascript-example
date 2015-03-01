@@ -5,4 +5,3 @@ CREATE TABLE IF NOT EXISTS authors (
   password text,
   PRIMARY KEY ((user_name))
 );
-INSERT INTO authors (user_name, full_name, password) VALUES ('admin', 'Emmanuel', 'admin');
