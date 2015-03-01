@@ -1,6 +1,6 @@
 # Qwazr example
 
-This is an example of a website structure for [QWAZR](https://www.qwazr.com)
+This is an instance of a website structure for [QWAZR](https://www.qwazr.com)
 
 A typical website structure contains the following directories:
 - [controller](controller): The controllers written in Javascript.
@@ -12,7 +12,9 @@ The default controller is called index.js located in the root of the controller 
 
 ## Configuration File
 
-The global configuration file is called configuration.json. It contains the required initialization parameters. On www.qwazr.com these parameters are required to link the website with its Cassandra keyspace.
+The global configuration file is called configuration.json. It contains the required initialization parameters.
+
+On www.qwazr.com these parameters built a provider which create an instance to its Cassandra keyspace.
 
 ```json
 {
