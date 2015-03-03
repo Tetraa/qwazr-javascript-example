@@ -3,5 +3,5 @@ CREATE TABLE IF NOT EXISTS authors (
   birth_year int,
   full_name text,
   password text,
-  PRIMARY KEY ((user_name))
+  PRIMARY KEY (user_name, password)
 );
