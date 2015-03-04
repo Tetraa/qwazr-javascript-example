@@ -12,8 +12,14 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="${request.contextPath}">Home</a></li>
-            <li><a href="${request.contextPath}/signin">Sign In</a></li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+    	   	<#if session.isAttribute("login")>
+            	<li><a href="${request.contextPath}/signout">${session.getAttribute("login")} : log out</a></li>
+   			<#else>
+            	<li><a href="${request.contextPath}/signin">Sign In</a></li>
+    		</#if>
+         </ul>
         </div>
       </div>
     </nav>

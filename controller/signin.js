@@ -7,9 +7,12 @@ if (request.body != null) {
 	password = request.body.parameter("password");
 	if (login != null && password != null) {
 		message = login + ' ' + password;
-		var row = providers.cassandra.execute("SELECT * FROM authors WHERE user_name=? AND password = ?", login, password).one();
+		var row = providers.cassandra.execute(
+				"SELECT * FROM authors WHERE user_name=? AND password = ?",
+				login, password).one();
 		if (row != null) {
-
+			// Put user_name in a variable session
+			session.setAttribute("login", row.getString("user_name"));
 			redirect = request.getContextPath();
 		} else
 			message = "Authentication failure";
@@ -17,11 +20,12 @@ if (request.body != null) {
 }
 
 // The content of message will be displayed
-if (message  == null)
+if (message == null)
 	message = "For this demo use admin/admin";
 response.variable("message", message);
 
 if (redirect != null)
 	response.redirect(redirect);
-else //Display the template, a path relative to the /view directory
+else
+	// Display the template, a path relative to the /view directory
 	response.view("signin.ftl");
