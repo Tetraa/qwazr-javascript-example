@@ -3,7 +3,7 @@
 This directory contains the controllers written in Javascript.
 
 The default controller is called index.js located in the root of each directory.
-For instance, the URL http://www.qwazr.com/web/emmanuel-keller/qwarz-example/ will execute
+For instance, the URL http://www.qwazr.io/qwazr/qwarz-example/ will execute
 the controller located in /qwazr-example/controller/index.js.
 
 The following code is a simple controller which display a template located in the view directory.
