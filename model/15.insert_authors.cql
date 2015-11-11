@@ -1,1 +1,0 @@
-INSERT INTO authors (user_name, full_name, password) VALUES ('admin', 'Emmanuel', 'admin');
