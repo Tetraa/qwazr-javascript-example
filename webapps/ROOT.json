@@ -1,0 +1,8 @@
+{
+  "controllers": {
+    "^/$": "src/js/controller.js"
+  },
+  "statics": {
+    "^/css/(.*)$": "src/static/css/$1"
+  }
+}
