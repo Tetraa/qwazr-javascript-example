@@ -30,13 +30,17 @@ This tutorial will connect to an existing local MongoDB server.
 You can change the connections parameters in the file connectors.json.
 The tutorial will create a database called "qwazr_js_example" and fill a collection called "entries".
 
-If you need to install MongoDB, here is the [instalation documentation](https://docs.mongodb.org/v3.0/installation/).
+If you need to install MongoDB, here is the [installation documentation](https://docs.mongodb.org/v3.0/installation/).
 
 ### 3. Clone this repository:
+
+If you use GIT you can use the usual git command:
 
 ```shell
 git clone https://github.com/qwazr/qwazr-javascript-example.git
 ```
+
+You may also [download the zipped version](https://github.com/qwazr/qwazr-javascript-example/archive/master.zip).
 
 ### 4. Get the latest QWAZR executable jar:
 
