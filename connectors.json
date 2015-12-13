@@ -1,0 +1,14 @@
+{
+  "connectors": [
+    {
+      "name": "mongo",
+      "class": "com.qwazr.connectors.MongoDbConnector",
+      "servers": [
+        {
+          "hostname": "localhost",
+          "port": 27017
+        }
+      ]
+    }
+  ]
+}
