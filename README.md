@@ -14,7 +14,7 @@ The default controller is called home.js located in the root of the controller d
 The following files defines the application:
 - [connectors.json](connectors.json): Defines connectors (like database connection pools) available in the controller,
 - [tools.json](tools.json): Defines singleton objects available in the controllers,
-- [webapps/ROOT.json][webapps/ROOT.json]: Defines the mapping between URLs and controllers and static files.
+- [webapps/ROOT.json](webapps/ROOT.json): Defines the mapping between URLs and controllers and static files.
 
 Deploy in minutes (really !)
 ----------------------------
