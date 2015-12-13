@@ -1,8 +1,20 @@
 <html>
 <head>
-    <link href="${request.contextPath}/css/example.css" rel="stylesheet" type="text/css"/>
+<#include 'includes/head.ftl'>
 </head>
 <body>
-<h1>${request.attributes.my_var}</h1>
+
+<#include 'includes/nav.ftl'>
+
+<div class="container">
+<#-- my_var has been set in the controller home.js -->
+    <h2 class="text-center">${request.attributes.my_var}</h2>
+
+<#include 'includes/message.ftl'>
+
+</div>
+
+<#include 'includes/footer.ftl'>
+
 </body>
 </html>

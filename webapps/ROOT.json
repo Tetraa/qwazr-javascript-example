@@ -1,6 +1,10 @@
 {
   "controllers": {
-    "^/$": "src/js/controller.js"
+    "^/$": "src/js/controller/home.js",
+    "^/form$": "src/js/controller/form-post.js",
+    "^/list$": "src/js/controller/list.js",
+    "^/api/get$": "src/js/controller/api-rest-json-get.js",
+    "^/api/post$": "src/js/controller/api-rest-json-post.js"
   },
   "statics": {
     "^/css/(.*)$": "src/static/css/$1"
