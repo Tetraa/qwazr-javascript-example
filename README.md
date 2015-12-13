@@ -54,7 +54,7 @@ The name of the file is: [qwazr-server-1.0.0-SNAPSHOT-exec.jar](http://download.
 
 Move to your repository and start the server:
 
-java -Dfile.encoding=UTF-8 qwazr-server-1.0.0-SNAPSHOT-exec.jar
+java -Dfile.encoding=UTF-8 -jar qwazr-server-1.0.0-SNAPSHOT-exec.jar
 
 ### 6. Welcome to QWAZR !
 
