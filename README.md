@@ -16,8 +16,8 @@ The following files defines the application:
 - [tools.json](tools.json): Defines singleton objects available in the controllers,
 - [webapps/ROOT.json](webapps/ROOT.json): Defines the mapping between URLs and controllers and static files.
 
-Deploy in minutes (really !)
-----------------------------
+Deploy in minutes
+-----------------
 
 ### 1. Be sure you have JAVA 8 installed:
 
